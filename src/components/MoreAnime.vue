@@ -3,9 +3,9 @@
     <div class="content">
       <h2>Looking for more anime?</h2>
       <p>Browse the rest of the catalog!</p>
-      <button class="button">
-        <a href="#">Browse</a>
-      </button>
+      <a href="#">
+        <button class="button">Browse</button>
+      </a>
     </div>
   </div>
 </template>
@@ -49,8 +49,6 @@ export default {
   border-radius: 3px;
   background-color: #4e4e50;
   transition: 0.5s;
-}
-.button a {
   color: white;
   text-decoration: none;
 }

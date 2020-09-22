@@ -1,25 +1,75 @@
 <template>
   <div class="collection-box">
     <div class="collection">
-      <BrowseHeaderCollection name="Most popular"/>
-      <ul class="anime-list">
+      <ul class="collection-types">
         <li>
-          <BrowseCard></BrowseCard>
+          <HeaderCollection collectionName="Most popular"></HeaderCollection>
+          <ul class="anime-list">
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+          </ul>
         </li>
         <li>
-          <BrowseCard></BrowseCard>
+          <HeaderCollection></HeaderCollection>
+          <ul class="anime-list">
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+          </ul>
         </li>
         <li>
-          <BrowseCard></BrowseCard>
-        </li>
-        <li>
-          <BrowseCard></BrowseCard>
-        </li>
-        <li>
-          <BrowseCard></BrowseCard>
-        </li>
-        <li>
-          <BrowseCard></BrowseCard>
+          <HeaderCollection></HeaderCollection>
+          <ul class="anime-list">
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+            <li>
+              <BrowseCard></BrowseCard>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -35,10 +85,17 @@ export default {
     BrowseHeaderCollection,
     BrowseCard
   },
+  props: {
+    name: String
+  }
 };
 </script>
 
 <style scoped>
+.collection-types {
+  list-style-type: none;
+  margin: 0;
+}
 .anime-list {
   max-width: 1024px;
   margin: 0 auto;
@@ -51,6 +108,6 @@ export default {
 .anime-list li {
   list-style: none;
   padding-left: 20px;
-  padding-bottom:10px;
+  padding-bottom: 10px;
 }
 </style>

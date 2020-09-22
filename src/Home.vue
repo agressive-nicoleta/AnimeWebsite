@@ -1,17 +1,7 @@
 <template>
   <div class="home">
     <Hero></Hero>
-    <ul class="collection-types">
-      <li>
-        <HeaderCollection name="Most popular"></HeaderCollection>
-      </li>
-      <li>
-        <HeaderCollection></HeaderCollection>
-      </li>
-      <li>
-        <HeaderCollection></HeaderCollection>
-      </li>
-    </ul>
+    <HeaderCollection/>
     <MoreAnime></MoreAnime>
   </div>
 </template>
@@ -26,6 +16,9 @@ export default {
     HeaderCollection,
     Hero,
     MoreAnime
+  },
+  props: {
+    collectionName: String
   }
 };
 </script>
@@ -86,11 +79,5 @@ input[type="text"] {
 p {
   color: white;
   max-width: 300px;
-}
-
-.collection-types {
-  list-style: none;
-  padding-left: 0px;
-  margin: 0px;
 }
 </style>

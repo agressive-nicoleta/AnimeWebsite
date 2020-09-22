@@ -3,7 +3,7 @@
     <div class="header-text">
       <div class="logo">
         <router-link to="/">
-          <img src="/assets/logo.jpg" alt="Logo">
+          <img src="https://wallpapercave.com/wp/wp2610989.jpg" alt="Logo">
         </router-link>
       </div>
       <div class="nav-links">
@@ -20,7 +20,7 @@
         </ul>
         <div class="search-logo">
           <router-link to="/search">
-            <img src="/assets/search.logo.png" alt="Logo">
+            <img src="https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png" alt="Logo">
           </router-link>
         </div>
       </div>
@@ -37,7 +37,7 @@ export default {
 <style scoped>
 .header-style {
   padding: 10px 0;
-  --font-family:"Avenir", Helvetica, Arial, sans-serif;;
+  --font-family: "Avenir", Helvetica, Arial, sans-serif;
   --font-color: #1A1A1C;
   --border-color: #1A1A1C;
   --background-color: white;

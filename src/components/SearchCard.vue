@@ -21,9 +21,9 @@
         while searching for the meaning behind her former commander's final
         words to her.
       </p>
-      <button class="button">
-        <router-link to="/show">Watch</router-link>
-      </button>
+      <router-link to="/show">
+        <button class="button">Watch</button>
+      </router-link>
     </div>
   </div>
 </template>
@@ -73,9 +73,7 @@ export default {
   border: solid 2px #1a1a1c;
   border-radius: 3px;
   background-color: #6f2232;
-  transition: 0.5s;
-}
-.button a {
+  transition: 0.3s;
   color: white;
   text-decoration: none;
 }
